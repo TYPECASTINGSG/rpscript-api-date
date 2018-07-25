@@ -1,0 +1,37 @@
+{
+  "name": "@typecasting/rpscript-api-date",
+  "version": "0.1.0",
+  "description": "RPScript API for Date",
+  "keywords": [
+    "api",
+    "rpa",
+    "rpscript",
+    "date"
+  ],
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "license": "Apache-2.0",
+  "author": "James Chong",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TYPECASTINGSG/rpscript-api-date.git"
+  },
+  "scripts": {
+    "watch": "tsc -w",
+    "build": "tsc",
+    "test": "mocha -r ts-node/register test/**.ts"
+  },
+  "dependencies": {
+    "date-fp": "^5.0.3",
+    "rpscript-interface": "^0.6.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/lodash": "^4.14.110",
+    "@types/node": "^10.5.0",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "ts-node": "^6.0.5",
+    "typescript": "^2.8.3"
+  }
+}
