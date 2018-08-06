@@ -5,6 +5,10 @@ import Date from 'date-fp';
  * @namespace Date
  * 
  * @see {@link https://www.npmjs.com/package/date-fp}
+ * 
+ * @example
+ * rps install date
+ * 
 */
 @RpsModule("date")
 export default class RpsDate {
@@ -18,7 +22,7 @@ export default class RpsDate {
  * @param {Array} array 
  * 
  * @returns {Date} 
- * @summary date-of :: [Number] -> Date
+ * @summary date-of :: [Number] → Date
  * 
  * @see {@link https://cullophid.github.io/date-fp/docs/functions/of.html}
  * 
@@ -37,7 +41,7 @@ async of (ctx:RpsContext,opts:{}, ...param:any[]) : Promise<Date> {
  * @param {Array} array 
  * 
  * @returns {Date}
- * @summary from-time :: Number -> Date
+ * @summary from-time :: Number → Date
  * 
  * @see {@link https://cullophid.github.io/date-fp/docs/functions/fromTime.html}
  * 
@@ -55,7 +59,7 @@ async fromTime (ctx:RpsContext,opts:{}, ...param:any[]) : Promise<Date> {
  * 
  * 
  * @returns {Date}
- * @summary add-date :: String -> Number -> Date -> Date
+ * @summary add-date :: String → Number → Date → Date
  * 
  * @see {@link https://cullophid.github.io/date-fp/docs/functions/add.html}
  * 
@@ -71,7 +75,7 @@ async addDate (ctx:RpsContext,opts:{}, ...param:any[]) : Promise<Date|Function> 
  * 
  * 
  * @returns {Date}
- * @summary clone-date :: Date -> Date
+ * @summary clone-date :: Date → Date
  * 
  * @see {@link https://cullophid.github.io/date-fp/docs/functions/clone.html}
  * 
@@ -86,7 +90,7 @@ async cloneDate (ctx:RpsContext,opts:{}, ...param:any[]) : Promise<Date> {
  * @memberof Date
  * 
  * 
- * @summary date-convert-to :: String -> Date -> Number
+ * @summary date-convert-to :: String → Date → Number
  * 
  * @see {@link https://cullophid.github.io/date-fp/docs/functions/convert-to.html}
  * 
@@ -101,7 +105,7 @@ async convertTo (ctx:RpsContext,opts:{}, ...param:any[]) : Promise<Date|Function
  * @memberof Date
  * 
  * 
- * @summary date-diff :: String -> Date -> Date -> Number
+ * @summary date-diff :: String → Date → Date → Number
  * 
  * @see {@link https://cullophid.github.io/date-fp/docs/functions/diff.html}
  * 
@@ -116,7 +120,7 @@ async diff (ctx:RpsContext,opts:{}, ...param:any[]) : Promise<Date|Function> {
  * @memberof Date
  * 
  * 
- * @summary date-equals :: Date -> Date -> Boolean
+ * @summary date-equals :: Date → Date → Boolean
  * 
  * @see {@link https://cullophid.github.io/date-fp/docs/functions/equals.html}
  * 
@@ -131,7 +135,7 @@ async equals (ctx:RpsContext,opts:{}, ...param:any[]) : Promise<Boolean|Function
  * @memberof Date
  * 
  * 
- * @summary date-format :: String -> Date -> String
+ * @summary date-format :: String → Date → String
  * 
  * @see {@link https://cullophid.github.io/date-fp/docs/functions/format.html}
  * 
@@ -145,7 +149,7 @@ async format (ctx:RpsContext,opts:{}, ...param:any[]) : Promise<String|Function>
  * @function date-get
  * @memberof Date
  * 
- * @summary get :: String -> Date -> Date
+ * @summary get :: String → Date → Date
  * 
  * @see {@link https://cullophid.github.io/date-fp/docs/functions/get.html}
  * 
@@ -159,7 +163,7 @@ async get (ctx:RpsContext,opts:{}, ...param:any[]) : Promise<Date|Function> {
  * @function is-leap-year
  * @memberof Date
  * 
- * @summary is-leap-year :: Date -> Boolean
+ * @summary is-leap-year :: Date → Boolean
  * 
  * @see {@link https://cullophid.github.io/date-fp/docs/functions/is-leap-year.html}
  * 
@@ -173,7 +177,7 @@ async isLeapYear (ctx:RpsContext,opts:{}, ...param:any[]) : Promise<Boolean> {
  * @function date-is-valid
  * @memberof Date
  * 
- * @summary date-is-valid :: Date -> Boolean
+ * @summary date-is-valid :: Date → Boolean
  * 
  * @see {@link https://cullophid.github.io/date-fp/docs/functions/is-valid.html}
  * 
@@ -187,7 +191,7 @@ async isValid (ctx:RpsContext,opts:{}, ...param:any[]) : Promise<Boolean> {
  * @function max-date
  * @memberof Date
  * 
- * @summary max-date :: [Date] -> Date
+ * @summary max-date :: [Date] → Date
  * 
  * @see {@link https://cullophid.github.io/date-fp/docs/functions/max.html}
  * 
@@ -201,7 +205,7 @@ async max (ctx:RpsContext,opts:{}, ...param:any[]) : Promise<Date> {
  * @function min-date
  * @memberof Date
  * 
- * @summary min-date :: [Date] -> Date
+ * @summary min-date :: [Date] → Date
  * 
  * @see {@link https://cullophid.github.io/date-fp/docs/functions/min.html}
  * 
@@ -215,7 +219,7 @@ async min (ctx:RpsContext,opts:{}, ...param:any[]) : Promise<Date> {
  * @function parse-date
  * @memberof Date
  * 
- * @summary parse-date :: String -> String -> Date
+ * @summary parse-date :: String → String → Date
  * 
  * @see {@link https://cullophid.github.io/date-fp/docs/functions/parse.html}
  * 
@@ -229,7 +233,7 @@ async parse (ctx:RpsContext,opts:{}, ...param:any[]) : Promise<Date> {
  * @function set-date
  * @memberof Date
  * 
- * @summary set-date :: String -> Number -> Date -> Date
+ * @summary set-date :: String → Number → Date → Date
  * 
  * @see {@link https://cullophid.github.io/date-fp/docs/functions/set.html}
  * 
@@ -243,7 +247,7 @@ async set (ctx:RpsContext,opts:{}, ...param:any[]) : Promise<Date> {
  * @function subtract-date
  * @memberof Date
  * 
- * @summary subtract-date :: String -> Number -> Date -> Date
+ * @summary subtract-date :: String → Number → Date → Date
  * 
  * @see {@link https://cullophid.github.io/date-fp/docs/functions/sub.html}
  * 
@@ -257,7 +261,7 @@ async sub (ctx:RpsContext,opts:{}, ...param:any[]) : Promise<Date> {
  * @function unix-time
  * @memberof Date
  * 
- * @summary unix-time :: Date -> Number
+ * @summary unix-time :: Date → Number
  * 
  * @see {@link https://cullophid.github.io/date-fp/docs/functions/unix-time.html}
  * 
