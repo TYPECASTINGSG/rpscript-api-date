@@ -170,15 +170,15 @@ async isLeapYear (ctx:RpsContext,opts:{}, ...param:any[]) : Promise<Boolean> {
 }
 
  /**
- * @function is-date-valid
+ * @function date-is-valid
  * @memberof Date
  * 
- * @summary is-date-valid :: Date -> Boolean
+ * @summary date-is-valid :: Date -> Boolean
  * 
  * @see {@link https://cullophid.github.io/date-fp/docs/functions/is-valid.html}
  * 
 */
-@rpsAction({verbName:'is-date-valid'})
+@rpsAction({verbName:'date-is-valid'})
 async isValid (ctx:RpsContext,opts:{}, ...param:any[]) : Promise<Boolean> {
   return Date.isValid.apply(this,param);
 }
