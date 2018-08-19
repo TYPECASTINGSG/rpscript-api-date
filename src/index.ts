@@ -55,7 +55,7 @@ async fromTime (ctx:RpsContext,opts:{}, ...param:any[]) : Promise<Date> {
  * @function add-date
  * @memberof Date
  * @example
- * add-date 'milliseconds' 1 date
+ * add-date 'milliseconds' 1 $date
  * 
  * 
  * @returns {Date}
@@ -73,6 +73,8 @@ async addDate (ctx:RpsContext,opts:{}, ...param:any[]) : Promise<Date|Function> 
  * @function clone-date
  * @memberof Date
  * 
+ * @example 
+ * clone-date $date
  * 
  * @returns {Date}
  * @summary clone-date :: Date → Date
@@ -89,6 +91,8 @@ async cloneDate (ctx:RpsContext,opts:{}, ...param:any[]) : Promise<Date> {
  * @function date-convert-to
  * @memberof Date
  * 
+ * @example
+ * date-convert-to 'hours' $date
  * 
  * @summary date-convert-to :: String → Date → Number
  * 
@@ -104,6 +108,8 @@ async convertTo (ctx:RpsContext,opts:{}, ...param:any[]) : Promise<Date|Function
  * @function date-diff
  * @memberof Date
  * 
+ * @example
+ * date-diff 'months' $date1 $date2
  * 
  * @summary date-diff :: String → Date → Date → Number
  * 
@@ -119,6 +125,8 @@ async diff (ctx:RpsContext,opts:{}, ...param:any[]) : Promise<Date|Function> {
  * @function date-equals
  * @memberof Date
  * 
+ * @example
+ * date-equals $date1 $date2
  * 
  * @summary date-equals :: Date → Date → Boolean
  * 
@@ -134,6 +142,8 @@ async equals (ctx:RpsContext,opts:{}, ...param:any[]) : Promise<Boolean|Function
  * @function date-format
  * @memberof Date
  * 
+ * @example
+ * date-format $date1 "DD/MM/YY"
  * 
  * @summary date-format :: String → Date → String
  * 
@@ -149,6 +159,9 @@ async format (ctx:RpsContext,opts:{}, ...param:any[]) : Promise<String|Function>
  * @function date-get
  * @memberof Date
  * 
+ * @example
+ * date-get 'hours' $date
+ * 
  * @summary get :: String → Date → Date
  * 
  * @see {@link https://cullophid.github.io/date-fp/docs/functions/get.html}
@@ -162,6 +175,9 @@ async get (ctx:RpsContext,opts:{}, ...param:any[]) : Promise<Date|Function> {
  /**
  * @function is-leap-year
  * @memberof Date
+ * 
+ * @example
+ * is-leap-year $date
  * 
  * @summary is-leap-year :: Date → Boolean
  * 
@@ -177,6 +193,9 @@ async isLeapYear (ctx:RpsContext,opts:{}, ...param:any[]) : Promise<Boolean> {
  * @function date-is-valid
  * @memberof Date
  * 
+ * @example
+ * date-is-valid $date
+ * 
  * @summary date-is-valid :: Date → Boolean
  * 
  * @see {@link https://cullophid.github.io/date-fp/docs/functions/is-valid.html}
@@ -190,6 +209,8 @@ async isValid (ctx:RpsContext,opts:{}, ...param:any[]) : Promise<Boolean> {
  /**
  * @function max-date
  * @memberof Date
+ * 
+ * @example max-date [$date1 , $date2]
  * 
  * @summary max-date :: [Date] → Date
  * 
@@ -205,6 +226,8 @@ async max (ctx:RpsContext,opts:{}, ...param:any[]) : Promise<Date> {
  * @function min-date
  * @memberof Date
  * 
+ * @example min-date [$date1 , $date2]
+ * 
  * @summary min-date :: [Date] → Date
  * 
  * @see {@link https://cullophid.github.io/date-fp/docs/functions/min.html}
@@ -218,6 +241,8 @@ async min (ctx:RpsContext,opts:{}, ...param:any[]) : Promise<Date> {
  /**
  * @function parse-date
  * @memberof Date
+ * 
+ * @example parse-date "MMM Do, YYYY" "January 1st, 2015"
  * 
  * @summary parse-date :: String → String → Date
  * 
@@ -233,6 +258,8 @@ async parse (ctx:RpsContext,opts:{}, ...param:any[]) : Promise<Date> {
  * @function set-date
  * @memberof Date
  * 
+ * @example set-date "hours" 13 $date
+ * 
  * @summary set-date :: String → Number → Date → Date
  * 
  * @see {@link https://cullophid.github.io/date-fp/docs/functions/set.html}
@@ -247,6 +274,8 @@ async set (ctx:RpsContext,opts:{}, ...param:any[]) : Promise<Date> {
  * @function subtract-date
  * @memberof Date
  * 
+ * @example subtract-date "hours" 1 $date
+ * 
  * @summary subtract-date :: String → Number → Date → Date
  * 
  * @see {@link https://cullophid.github.io/date-fp/docs/functions/sub.html}
@@ -260,6 +289,8 @@ async sub (ctx:RpsContext,opts:{}, ...param:any[]) : Promise<Date> {
  /**
  * @function unix-time
  * @memberof Date
+ * 
+ * @example unix-time $date
  * 
  * @summary unix-time :: Date → Number
  * 
